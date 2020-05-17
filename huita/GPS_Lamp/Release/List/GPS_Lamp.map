@@ -1,0 +1,95 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+__ds1820_scratch_pad                                                              0x0200       9
+decet_min_clock                                                                   0x0209       1
+ed_hours_clock                                                                    0x020A       1
+decet_Hours_clock                                                                 0x020B       1
+h                                                                                 0x020C       1
+m                                                                                 0x020D       1
+s                                                                                 0x020E       1
+err                                                                               0x020F       2
+spr                                                                               0x0211       1
+counter                                                                           0x0212       1
+work                                                                              0x0213       1
+test                                                                              0x0214       1
+es_gps                                                                            0x0215       1
+cnt_rem                                                                           0x0216       1
+cnt_c                                                                             0x0217       1
+error                                                                             0x0218       1
+cout_t                                                                            0x0219       1
+st_adc                                                                            0x021A       1
+kvadrat                                                                           0x021B       1
+decet_sek_clock                                                                   0x021C       1
+alarm_u                                                                           0x021D       1
+alarm_cout                                                                        0x021E       1
+c                                                                                 0x021F       1
+test1                                                                             0x0220       1
+t                                                                                 0x0221       1
+metr                                                                              0x0222       2
+adcw                                                                              0x0224       4
+adcw_copy                                                                         0x0228       4
+copy                                                                              0x022C       4
+wcnt_rem                                                                          0x0230       4
+wcnt_c                                                                            0x0234       4
+lcd_buf                                                                           0x0238      10
+speed_array                                                                       0x0242       5
+speed                                                                             0x0247      10
+rx_buffer                                                                         0x0251     256
+rx_wr_index                                                                       0x0351       1
+rx_rd_index                                                                       0x0352       1
+rx_counter                                                                        0x0353       2
+_seed                                                                             0x0355       4
+_base_y                                                                           0x0359       4
+_lcd_x                                                                            0x035D       1
+_lcd_y                                                                            0x035E       1
+_lcd_maxx                                                                         0x035F       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+work_gps                                                                          R5           1
+i                                                                                 R4           1
+temp_msb                                                                          R7           1
+temp_lsb                                                                          R6           1
+ed_speed                                                                          R9           1
+deset_speed                                                                       R8           1
+soten_speed                                                                       R11          1
+sum_hours                                                                         R10          1
+j                                                                                 R13          1
+ed_min_clock                                                                      R12          1
+rx_buffer_overflow                                                                R2.0      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+time                                                                              0x000E9     36
+usart_rx_isr                                                                      0x0010D     47
+reset                                                                             0x0013C      6
+ext_int0_isr                                                                      0x00142    272
+timer0_ovf_isr                                                                    0x00252    163
+timer1_ovf_isr                                                                    0x002F5     39
+timer2_ovf_isr                                                                    0x0031C     29
+adc_isr                                                                           0x00339     65
+main                                                                              0x0037A   1652
+itoa                                                                              0x009EE     46
+ftoa                                                                              0x00A1C    296
+rtc_init                                                                          0x00B44     30
+rtc_get_time                                                                      0x00B62     48
+rtc_set_time                                                                      0x00B92     30
+_lcd_write_nibble_G103                                                            0x00BB0     37
+_lcd_write_data                                                                   0x00BD5     12
+lcd_gotoxy                                                                        0x00BE1     17
+lcd_clear                                                                         0x00BF2     20
+lcd_putchar                                                                       0x00C06     32
+lcd_puts                                                                          0x00C26     17
+lcd_init                                                                          0x00C37     60
+ftrunc                                                                            0x00C73     49
+floor                                                                             0x00CA4     23
+strcpyf                                                                           0x00CBB     13
+bcd2bin                                                                           0x00CC8     13
+bin2bcd                                                                           0x00CD5     10

@@ -1,0 +1,38 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+rx_buffer                                                                         0x0080       8
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+nom_ok                                                                            R3           1
+nom_n                                                                             R2           1
+i                                                                                 R5           1
+t                                                                                 R4           1
+stdl                                                                              R6,R7        2
+prer                                                                              GPIOR0.0  1bit
+rx_wr_index                                                                       R9           1
+rx_rd_index                                                                       R8           1
+rx_counter                                                                        R11          1
+rx_buffer_overflow                                                                GPIOR0.1  1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+igra                                                                              0x0006E     23
+pauza                                                                             0x00085     12
+melodi                                                                            0x00091     98
+color_es                                                                          0x000F3     23
+color_no                                                                          0x0010A     25
+color                                                                             0x00123      9
+sound                                                                             0x0012C      5
+ext_int0_isr                                                                      0x00131      5
+usart_rx_isr                                                                      0x00136     59
+timer0_ovf_isr                                                                    0x00171     20
+timer1_ovf_isr                                                                    0x00185     52
+main                                                                              0x001B9    200
